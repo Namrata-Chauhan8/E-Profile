@@ -6,6 +6,21 @@
 
 .card-footer{
     .partition{
-        color: lightgrey;
+        color: black;
     }
+    .icons{
+        cursor: pointer;
+    }
+}
+
+.card{
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: lightsteelblue;
+    
+    :hover{
+        cursor: pointer;
+    }
+}
+body{
+    background-color: lightcyan;
 }

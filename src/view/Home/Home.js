@@ -97,13 +97,13 @@ const Home = () => {
                   <b>Username:</b> {user.username}
                 </p> */}
                 <p className="card-text">
-                  <MdEmail/>  <span>{user.email}</span>
+                  <MdEmail/>{"   "}<span>{user.email}</span>
                 </p>
                 <p className="card-text">
-                  <MdOutlinePhone/>  <span>{user.phone}</span>
+                  <MdOutlinePhone/>{"   "}<span>{user.phone}</span>
                 </p>
                 <p className="card-text">
-                  <FaEarthAsia/>  <span>{user.website}</span> 
+                  <FaEarthAsia/>{"   "}<span>{user.website}</span> 
                 </p>
                 {/* <p className="card-text">
                   <b>Company:</b> {user.company.name}
@@ -116,13 +116,13 @@ const Home = () => {
                 </p> */}
               </div>
               <div className="card-footer d-flex justify-content-between">
-                <span onClick={() => handleLike(index)}>
+                <span className="icons" onClick={() => handleLike(index)}>
                   {likeStates[index] ? <FcLike /> : <FaRegHeart />}
                 </span>
                 <span className="partition">|</span>
-                <span onClick={() => handleEdit(index)}><FaEdit/></span>
+                <span className="icons" onClick={() => handleEdit(index)}><FaEdit/></span>
                 <span className="partition">|</span>
-                <span onClick={() => handleDelete(index)}><RiDeleteBin6Line/></span>
+                <span className="icons" onClick={() => handleDelete(index)}><RiDeleteBin6Line/></span>
               </div>
             </div>
           </div>
